@@ -23,7 +23,7 @@ const Services = () => {
       </Box>
       <Box sx={box_carduri}>
         <Card_square icon_card="Training" text_titlu="User Training Programs" text_descriere="Empowering your team with the skills to navigate digital tools securely and efficiently." />
-        <Card_square icon_card="Video" text_titlu="Video Assets Production" text_descriere="Engaging video production that brings your brand to life. See our portfolio here." />
+        <Card_square icon_card="Video" text_titlu="Video Assets Production" text_descriere="Engaging pula pula pula that brings your brand to life. See our portfolio here." />
         <Card_square icon_card="Development" text_titlu="Creative Web Design and Development" text_descriere="Custom web design and development to make your brand stand out online." />
       </Box>
     </Box>

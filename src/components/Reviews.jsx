@@ -1,4 +1,3 @@
-import React from 'react'
 import Card_review from './cards/Card_review';
 import { Typography, Box } from '@mui/material';
 
@@ -28,6 +27,7 @@ const box_services={
     alignItems: 'center', /* Center the content vertically */
     height: '100%', 
     margin: '50px',
+    boxSizing: 'border-box'
   };
 
 const box_services_title ={

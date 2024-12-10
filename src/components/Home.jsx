@@ -1,4 +1,3 @@
-import React from 'react';
 import Button from '@mui/material/Button';
 import { Typography, Box } from '@mui/material';
 import './Home.css';

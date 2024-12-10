@@ -1,4 +1,3 @@
-import React from 'react'
 import { Typography, Box } from '@mui/material';
 import Icon from '../Icon';
 
@@ -10,7 +9,7 @@ const Card_square = ({text_titlu, text_descriere, icon_card}) => {
       </Box>
     <Box style={box_text} sx={{}}>
     <Typography variant="h5" sx={{fontWeight:600, display:'block', color:'white', fontFamily: 'Titillium Web', marginTop:7}}>{text_titlu}</Typography>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginBottom:3, marginTop:3}}>{text_descriere}</Typography>
+    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginBottom:3}}>{text_descriere}</Typography>
     </Box>
 
     </Box>

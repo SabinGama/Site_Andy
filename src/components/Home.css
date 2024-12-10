@@ -88,6 +88,24 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
+  h1 {
+    font-size: 3rem !important;
+    margin-bottom: 2.5vh !important;
+  }
+
+  .p_home {
+    font-size: 1.2rem !important;
+    margin-bottom: 1.5vh !important;
+  }
+
+  .poza_home {
+    margin-top: 2.5vh !important;
+    height: 50vh !important;
+    width: 80vw !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
 
 /* Media query for very small devices */
@@ -106,8 +124,4 @@
   .h_home {
     font-size: 40px; /* Adjust font size for very small devices */
   }
-}
-
-h5 {
-  font-size: 1.5rem !important;
 }

@@ -5,10 +5,11 @@ const Clients = () => {
   return (
         <Box style={box_services}>
         <Box style={box_services_title}>
-        <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web'}}>SERVICES</Typography>
-        <Typography variant="h2" sx={{fontWeight:600, display:'flex', color:'white', textAlign: 'center', fontFamily: 'Titillium Web',}}>Protecting And Creating Your Digital Assets Expertly</Typography>
-        <Typography variant="p" sx={{fontWeight:400, display:'block', color:'white', textAlign: 'center', fontFamily: "Poppins", marginTop:'2%', justifySelf:'center'}}>We offer a variety of services that ensure a cohesive digital presence,
-        strengthening your brand, engaging your audience, and driving growth.</Typography>
+        <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web', textTransform:'uppercase'}}>Clients</Typography>
+        <Typography variant="h2" sx={{fontWeight:600, display:'flex', color:'white', textAlign: 'center', fontFamily: 'Titillium Web',textTransform:'capitalize'}}>Our portfolio features
+        a diverse range of clients</Typography>
+        <Typography variant="p" sx={{fontWeight:400, display:'block', color:'white', textAlign: 'center', fontFamily: "Poppins", marginTop:'2%', justifySelf:'center'}}>Our diverse portfolio spans clients worldwide, from startups to large enterprises. 
+        Partner with us to take your business to the next level.</Typography>
         </Box>
     </Box>
   )

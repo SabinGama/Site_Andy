@@ -5,6 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Reviews from './components/Reviews';
 import Clients from './components/Clients';
+import Contact from './components/Contact';
 const App = () => {
   return (
     <div style={{backgroundColor:'#181414'}}>
@@ -15,101 +16,7 @@ const App = () => {
         <About/>
         <Clients/>
         <Reviews/>
-    <p style={{color:'red', fontSize:'24px'}}>nimic</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p style={{color:'red', fontSize:'24px'}}>nimic</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-    <p className='text-3xl' style={{color:'white'}}>text2</p>
-
-
+        <Contact/>
     </div>
     </div>
   )

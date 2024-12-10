@@ -5,6 +5,9 @@ import Services from './components/Services';
 import About from './components/About';
 import Reviews from './components/Reviews';
 import Clients from './components/Clients';
+import Reviews from './components/Reviews';
+import Clients from './components/Clients';
+import Contact from './components/Contact';
 const App = () => {
   return (
     <div style={{backgroundColor:'#181414'}}>
@@ -110,6 +113,9 @@ const App = () => {
     <p className='text-3xl' style={{color:'white'}}>text2</p>
 
 
+        <Clients/>
+        <Reviews/>
+        <Contact/>
     </div>
     </div>
   )

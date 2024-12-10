@@ -9,6 +9,9 @@ import Remote  from '../assets/Remote.png'
 import Client from '../assets/Client.png'
 import Hours from '../assets/Hours.png'
 import Solution from '../assets/Solution.png'
+import Logo_color from '../assets/logo_color.png'
+import Mail from '../assets/mail.svg'
+import Phone from '../assets/phone.svg'
 
 export default ({icon, styles})=>{
     switch (icon) {
@@ -32,6 +35,12 @@ export default ({icon, styles})=>{
             return <img style={styles} src={Hours} alt='Hours_icon'></img>
         case 'Solution':
             return <img style={styles} src={Solution} alt='Solution_icon'></img>
+        case 'Logo_color':
+            return <img style={styles} src={Logo_color} alt='Logo_color_icon'></img>
+        case 'Mail':
+            return <img style={styles} src={Mail} alt='Mail_icon'></img>
+        case 'Phone':
+            return <img style={styles} src={Phone} alt='Phone_icon'></img>
         default:
             return <img style={styles} src={Logo} alt='Secure_icon'></img>
     }

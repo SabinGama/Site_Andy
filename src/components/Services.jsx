@@ -55,6 +55,19 @@ const box_services_title ={
   width: '60%',
 };
 
+const box_services_title ={
+  display: 'flex',
+  flexDirection: 'column',
+  marginRight: 'auto', // Aici mai trebuie incercat alta metoda de a centra textul
+  marginLeft: 'auto',
+  padding:'2%',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+  width: '60%',
+};
+
+
 const box_carduri={
     display: 'flex',
     alignItems: 'center',

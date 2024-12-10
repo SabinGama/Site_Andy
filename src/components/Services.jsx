@@ -23,7 +23,7 @@ const Services = () => {
       </Box>
       <Box sx={box_carduri}>
         <Card_square icon_card="Training" text_titlu="User Training Programs" text_descriere="Empowering your team with the skills to navigate digital tools securely and efficiently." />
-        <Card_square icon_card="Video" text_titlu="Video Assets Production" text_descriere="Engaging pula pula pula that brings your brand to life. See our portfolio here." />
+        <Card_square icon_card="Video" text_titlu="Video Assets Production" text_descriere="Engaging pula pula pula that brings your brand to life. " link="See our portfolio here." />
         <Card_square icon_card="Development" text_titlu="Creative Web Design and Development" text_descriere="Custom web design and development to make your brand stand out online." />
       </Box>
     </Box>
@@ -36,11 +36,8 @@ export default Services;
 
 
 const box_services={
-  flexWrap: 'wrap', /* Allow wrapping for smaller screens */
   marginTop: '2%',
   justifyContent: 'center', /* Center the content horizontally */
-  alignItems: 'center', /* Center the content vertically */
-  height: '100%'
 };
 
 
@@ -50,7 +47,6 @@ const box_services_title ={
   marginRight: 'auto', // Aici mai trebuie incercat alta metoda de a centra textul
   marginLeft: 'auto',
   padding:'2%',
-  alignItems: 'center',
   justifyContent: 'center',
   textAlign: 'center',
   width: '60%',
@@ -59,8 +55,7 @@ const box_services_title ={
 
 const box_carduri={
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
 };
 
 const h2_mobile={

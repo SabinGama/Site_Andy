@@ -1,7 +1,7 @@
 import React from 'react';
 import poza_laptop from '../assets/poza_laptop.png';
 import { Typography, Box } from '@mui/material';
-import Card_about from './Card_about';
+import Card_about from './cards/Card_about';
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
       </Box>
       <Box style={right_pane}>
         <Box>
-          <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1'}}>ABOUT US</Typography>
+          <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1', fontFamily: 'Titillium Web'}}>ABOUT US</Typography>
           <Typography variant="h2" sx={{fontWeight:600, display:'flex', color:'white',  fontFamily: 'Titillium Web',}}>Transforming Your Business for the Digital Age</Typography>
           <Typography variant="p" sx={{fontWeight:400, display:'block', color:'white', fontFamily: "Poppins", marginTop:'2%', justifySelf:'center'}}>We’ve taken on the mission to empower businesses by building secure, visually striking digital solutions that protect your brand and drive lasting growth in today’s competitive landscape.</Typography>
         </Box>

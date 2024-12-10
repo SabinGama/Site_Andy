@@ -31,7 +31,7 @@ const buttonStyles = {
     background: 'linear-gradient(-90deg, #1585B7,#07BFD2)',
     fontWeight: 700,
     width: {
-        xs: '100%', // 100% width on extra-small screens
+        xs: '50%', // 100% width on extra-small screens
         sm: '80%',  // 80% width on small screens
         md: '60%',  // 60% width on medium screens
         lg: '50%',  // 50% width on large screens
@@ -51,6 +51,27 @@ const buttonStyles = {
         md: '120%', // 120% font size on medium screens
         lg: '130%', // 130% font size on large screens
         xl: '140%'  // 140% font size on extra-large screens
-    }
+    },
+    marginLeft: {
+        xs: '25%', // 100% width on extra-small screens
+        sm: '0',  // 80% width on small screens
+        md: '0',  // 60% width on medium screens
+        lg: '0',  // 50% width on large screens
+        xl: '0'   // 40% width on extra-large screens
+    },
+    marginRight: {
+        xs: '25%', // 100% width on extra-small screens
+        sm: '0',  // 80% width on small screens
+        md: '0',  // 60% width on medium screens
+        lg: '0',  // 50% width on large screens
+        xl: '0'   // 40% width on extra-large screens
+    },
+    marginTop: {
+        xs: '2vh', // 100% width on extra-small screens
+        sm: '0',  // 80% width on small screens
+        md: '0',  // 60% width on medium screens
+        lg: '0',  // 50% width on large screens
+        xl: '0'   // 40% width on extra-large screens
+    },
 };
 export default Home;

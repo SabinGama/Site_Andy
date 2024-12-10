@@ -1,12 +1,12 @@
 import React from 'react'
-import Card_square from './Card_square';
+import Card_square from './cards/Card_square';
 import { Typography, Box } from '@mui/material';
 
 const Services = () => {
   return (
     <Box  style={box_services}>
         <Box style={box_services_title}>
-        <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center'}}>SERVICES</Typography>
+        <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web'}}>SERVICES</Typography>
         <Typography variant="h2" sx={{fontWeight:600, display:'flex', color:'white', textAlign: 'center', fontFamily: 'Titillium Web',}}>Protecting And Creating Your Digital Assets Expertly</Typography>
         <Typography variant="p" sx={{fontWeight:400, display:'block', color:'white', textAlign: 'center', fontFamily: "Poppins", marginTop:'2%', justifySelf:'center'}}>We offer a variety of services that ensure a cohesive digital presence,
         strengthening your brand, engaging your audience, and driving growth.</Typography>
@@ -25,17 +25,6 @@ const Services = () => {
   )
 }
 
-const box_services_title ={
-  display: 'flex',
-  flexDirection: 'column',
-  marginRight: '20%', // Aici mai trebuie incercat alta metoda de a centra textul
-  marginLeft: '20%',
-  padding:'2%',
-  alignItems: 'center',
-  justifyContent: 'center',
-  textAlign: 'center',
-};
-
 const box_services={
   flexWrap: 'wrap', /* Allow wrapping for smaller screens */
   marginTop: '2%',
@@ -44,6 +33,19 @@ const box_services={
   height: '100%', 
   margin: '50px',
 };
+
+const box_services_title ={
+  display: 'flex',
+  flexDirection: 'column',
+  marginRight: 'auto', // Aici mai trebuie incercat alta metoda de a centra textul
+  marginLeft: 'auto',
+  padding:'2%',
+  alignItems: 'center',
+  justifyContent: 'center',
+  textAlign: 'center',
+  width: '60%',
+};
+
 
 const box_carduri={
     display: 'flex',

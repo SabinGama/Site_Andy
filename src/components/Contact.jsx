@@ -5,9 +5,9 @@ import Card_contact from './cards/Card_contact';
 
 const Contact = () => {
   return (
-    <Box style={box_contact}>
-    <Box style={box_contact_title}>
-        <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web', textTransform:'uppercase'}}>Contact</Typography>
+    <Box sx={box_contact}>
+    <Box sx={box_contact_title}>
+        <Typography variant="h6" sx={h6}>Contact</Typography>
         <Typography variant="h2" sx={h2}>Contact us today to get started</Typography>
     </Box>
         <Box sx={container}>
@@ -67,16 +67,16 @@ const Contact = () => {
 
 const container = {
   display: 'flex',
+  height: '100%', // Full viewport height
+  justifyContent: 'center', // Center content horizontally
+  marginTop: '2%',
   flexDirection:{
     xs: 'column',
-    sm:  'column',  
-    md:  'row',
+    sm: 'column',  
+    md: 'row',
     lg: 'row',
     xl: 'row',
   },
-    height: '100%', // Full viewport height
-    justifyContent: 'center', // Center content horizontally
-    marginTop: '2%',
   };
 
 const box_contact={
@@ -102,13 +102,11 @@ const box_contact_title ={
 
   const left_pane = {
     flex:0.45,
-    //backgroundColor:'blue',
   };
   
   const right_pane = {
     flex:0.45,
     display: 'flex',
-    // backgroundColor:'green',
     marginTop:{
       xs:'5vh',
       sm:'5vh'
@@ -127,31 +125,22 @@ const box_textinputs = {
   display: 'flex',
   flexDirection: 'column',
 }
-const textfield ={
-'& .MuiInputBase-root': {
-    color: '#8E8E8E', // Text color
-  },
-  '& .MuiInputLabel-root': {
-    color: '#8E8E8E', // Label color
-    '&.Mui-focused': {
-      color: '#08BED2', // Label color when focused
-    },
-  },
-  '& .MuiOutlinedInput-root': {
-    '& fieldset': {
-      borderColor: '#8E8E8E', // Border color
-    },
-    '&:hover fieldset': {
-      borderColor: 'white', // Border color on hover
-    },
-    '&.Mui-focused fieldset': {
-      borderColor: '#08BED2', // Border color when focused
-    },
-  },
-  fontFamily:'Titillium Web',
-  marginBottom: '20px', // Add some space between text fields
-}
 
+const h6 = {
+  fontWeight:600, 
+  display:'block', 
+  color:'#08BCD1', 
+  fontFamily: 'Titillium Web',
+  textAlign:'center',
+  textTransform:'uppercase',
+  fontSize: {
+    xs: '1rem !important', // 100% font size on extra-small screens
+    sm: '1.2rem !important', // 110% font size on small screens
+    md: '1.5rem !important', // 120% font size on medium screens
+    lg: '1.5rem !important', // 130% font size on large screens
+    xl: '1.5rem !important'  // 140% font size on extra-large screens
+  },
+  };
 
 const h2 = {
   fontWeight:600, display:'flex', color:'white',  fontFamily: 'Titillium Web',
@@ -164,6 +153,53 @@ const h2 = {
     xl: '3.75rem !important'  // 140% font size on extra-large screens
   },
 };
+
+const textfield ={
+  '& .MuiInputBase-root': {
+      color: '#8E8E8E', // Text color
+    },
+    '& .MuiInputLabel-root': {
+      color: '#8E8E8E', // Label color
+      '&.Mui-focused': {
+        color: '#08BED2', // Label color when focused
+      },
+    },
+    '& .MuiOutlinedInput-root': {
+      '& fieldset': {
+        borderColor: '#8E8E8E', // Border color
+      },
+      '&:hover fieldset': {
+        borderColor: 'white', // Border color on hover
+      },
+      '&.Mui-focused fieldset': {
+        borderColor: '#08BED2', // Border color when focused
+      },
+    },
+  
+    fontFamily:'Titillium Web',
+    marginBottom: '20px', // Add some space between text fields
+    marginLeft: {
+      xs: '0%', // 100% width on extra-small screens
+      sm: '15%',  // 80% width on small screens
+      md: '0',  // 60% width on medium screens
+      lg: '0',  // 50% width on large screens
+      xl: '0'   // 40% width on extra-large screens
+    },
+    marginRight: {
+      xs: '0%', // 100% width on extra-small screens
+      sm: '15%',  // 80% width on small screens
+      md: '0',  // 60% width on medium screens
+      lg: '0',  // 50% width on large screens
+      xl: '0'   // 40% width on extra-large screens
+    },
+    maxWidth:{
+      xs:'100%',
+      sm:'70%',
+      md:'100%',
+      lg:'100%',
+      xl:'100%'
+    },
+  }
 
 const buttonStyles = {
   background: 'linear-gradient(-90deg, #1585B7,#07BFD2)',

@@ -7,8 +7,8 @@ const Card_square = ({text_titlu, text_descriere, icon_card, link}) => {
       <Box sx={box_icon}>
       <Icon styles={icon} icon={icon_card}/>
       </Box>
-    <Typography variant="h5" sx={{fontWeight:600, display:'block', color:'white', fontFamily: 'Titillium Web', marginTop:3, marginRight:'10%', marginLeft:'10%'}}>{text_titlu}</Typography>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginTop:3, marginRight:'10%', marginLeft:'10%'}}>{text_descriere} <a href="" style={{textDecoration:'underline'}}>{link}</a></Typography>
+    <Typography variant="h5" sx={h5}>{text_titlu}</Typography>
+    <Typography variant="p1" sx={p}>{text_descriere} <a href="" style={{textDecoration:'underline'}}>{link}</a></Typography>
     </Box>
   )
 }
@@ -22,11 +22,9 @@ const container={
     lg:'25%',
     xl:'25%'
   },
-  gap:'30px' ,
   borderRadius: '16px',
   textAlign: 'center',
-  //background: 'linear-gradient(90deg, #171717,#323335,#171717)',
-  background: 'red',
+  background: 'linear-gradient(90deg, #171717,#323335,#171717)',
   marginTop: {
     xs: '8vh', // 100% width on extra-small screens
     sm: '2vh',  // 80% width on small screens
@@ -56,4 +54,32 @@ const icon={
   maxWidth: '30%',
   height: 'auto',
 }
-export default Card_square
+
+const h5= {
+  fontWeight:600, 
+  display:'block', 
+  color:'white', 
+  fontFamily: 'Titillium Web',
+  marginTop:'5%', 
+  marginRight:'10%',
+   marginLeft:'10%',
+  fontSize: {
+    xs: '1rem !important', // 100% font size on extra-small screens
+    sm: '1.2rem !important', // 110% font size on small screens
+    md: '1.5rem !important', // 120% font size on medium screens
+    lg: '2rem !important', // 130% font size on large screens
+    xl: '2rem !important'  // 140% font size on extra-large screens
+  },
+}
+
+const p = {
+  fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', 
+  marginTop:'5%', 
+  marginRight:'10%',
+  marginLeft:'10%',
+  fontSize: {
+    xs: '0.8rem !important', // 110% font size on small screens
+    md: '1rem !important', // 120% font size on medium screens
+  },
+};
+export default Card_square;

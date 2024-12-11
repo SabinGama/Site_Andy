@@ -7,7 +7,7 @@ const Card_about = ({text_titlu, text_descriere, icon_card}) => {
     <Box sx={container}>
     <Icon styles={icon} icon={icon_card}/>
     <Typography variant="h5" sx={h5}>{text_titlu}</Typography>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginTop:2}}>{text_descriere}</Typography>
+    <Typography variant="p1" sx={p}>{text_descriere}</Typography>
     </Box>
   )
 }
@@ -15,14 +15,14 @@ const Card_about = ({text_titlu, text_descriere, icon_card}) => {
 const container={
   padding:'2%',
   marginLeft: {
-    xs: '10%', // 100% width on extra-small screens
+    xs: '15%', // 100% width on extra-small screens
     sm: '0',  // 80% width on small screens
     md: '0',  // 60% width on medium screens
     lg: '0',  // 50% width on large screens
     xl: '0'   // 40% width on extra-large screens
 },
 marginRight: {
-    xs: '10%', // 100% width on extra-small screens
+    xs: '15%', // 100% width on extra-small screens
     sm: '0',  // 80% width on small screens
     md: '0',  // 60% width on medium screens
     lg: '0',  // 50% width on large screens
@@ -30,8 +30,8 @@ marginRight: {
 },
   maxWidth:{
     xs:'80%',
-    sm: '45%',
-    md: '45%',
+    sm:'45%',
+    md:'45%',
     lg:'40%',
     xl:'40%'
   },
@@ -55,6 +55,14 @@ const h5= {
     xl: '2rem !important'  // 140% font size on extra-large screens
   },
 }
+
+const p = {
+  fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginTop:2,
+  fontSize: {
+    xs: '0.8rem !important', // 110% font size on small screens
+    md: '1rem !important', // 120% font size on medium screens
+  },
+};
 
 const icon={
   maxWidth: '30%',

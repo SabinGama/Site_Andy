@@ -3,9 +3,9 @@ import { Typography, Box } from '@mui/material';
 
 const Reviews = () => {
   return (
-    <Box  style={box_reviews}>
-        <Box style={box_reviews_title}>
-        <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web'}}>REVIEWS</Typography>
+    <Box sx={box_reviews}>
+        <Box sx={box_reviews_title}>
+        <Typography variant="h6" sx={h6}>REVIEWS</Typography>
         <Typography variant="h2" sx={h2}>See What Others People Are Saying</Typography>
         </Box>
         <Box sx={box_carduri}>
@@ -52,6 +52,21 @@ const box_reviews_title ={
       xl:'row'
     },
   };
+
+  const h6 = {
+    fontWeight:600, 
+    display:'block', 
+    color:'#08BCD1', 
+    fontFamily: 'Titillium Web',
+    textAlign:'center',
+    fontSize: {
+      xs: '1rem !important', // 100% font size on extra-small screens
+      sm: '1.2rem !important', // 110% font size on small screens
+      md: '1.5rem !important', // 120% font size on medium screens
+      lg: '1.5rem !important', // 130% font size on large screens
+      xl: '1.5rem !important'  // 140% font size on extra-large screens
+    },
+    };
 
   const h2 = {
     fontWeight:600, display:'flex', color:'white',  fontFamily: 'Titillium Web',

@@ -30,6 +30,8 @@ const About = () => {
 
 const container = {
   display: 'flex',
+  height: '100%', // Full viewport height
+  justifyContent: 'center', // Center content horizontally
   flexDirection:{
     xs:'column-reverse',
     sm:'column-reverse',
@@ -37,8 +39,6 @@ const container = {
     lg:'row',
     xl:'row'
   },
-  height: '100%', // Full viewport height
-  justifyContent: 'center', // Center content horizontally
 };
 
 const left_pane = {
@@ -62,6 +62,20 @@ const center_mobile = {
     lg:'left',
     xl:'left'
   },
+  marginLeft: {
+    xs: '5%', // 100% width on extra-small screens
+    sm: '5%',  // 80% width on small screens
+    md: '0',  // 60% width on medium screens
+    lg: '0',  // 50% width on large screens
+    xl: '0'   // 40% width on extra-large screens
+},
+marginRight: {
+    xs: '5%', // 100% width on extra-small screens
+    sm: '5%',  // 80% width on small screens
+    md: '0',  // 60% width on medium screens
+    lg: '0',  // 50% width on large screens
+    xl: '0'   // 40% width on extra-large screens
+},
 }
 
 const box_carduri={
@@ -74,11 +88,26 @@ const box_carduri={
     lg:'row',
     xl:'row'
   },
+  marginLeft: {
+    xs: '0', // 100% width on extra-small screens
+    sm: '5%',  // 80% width on small screens
+    md: '0',  // 60% width on medium screens
+    lg: '0',  // 50% width on large screens
+    xl: '0'   // 40% width on extra-large screens
+},
+marginRight: {
+    xs: '0', // 100% width on extra-small screens
+    sm: '5%',  // 80% width on small screens
+    md: '0',  // 60% width on medium screens
+    lg: '0',  // 50% width on large screens
+    xl: '0'   // 40% width on extra-large screens
+},
 };
 
 const poza = {
     maxWidth: '84%',
     height: 'auto',
+    marginTop: '2%',
 }
 
 const h2 = {
@@ -105,6 +134,7 @@ fontWeight:600,
 display:'block', 
 color:'#08BCD1', 
 fontFamily: 'Titillium Web',
+textTransform:'uppercase',
 fontSize: {
   xs: '1rem !important', // 100% font size on extra-small screens
   sm: '1.2rem !important', // 110% font size on small screens
@@ -112,13 +142,13 @@ fontSize: {
   lg: '1.5rem !important', // 130% font size on large screens
   xl: '1.5rem !important'  // 140% font size on extra-large screens
 },
-}
+};
 
 const p = {
   fontWeight:400, display:'block', color:'white', fontFamily: "Poppins", marginTop:'2%', justifySelf:'center',
   fontSize: {
     xs: '0.8rem !important', // 110% font size on small screens
-    md: '1.2rem !important', // 120% font size on medium screens
+    md: '1rem !important', // 120% font size on medium screens
   },
-}
+};
 export default About;

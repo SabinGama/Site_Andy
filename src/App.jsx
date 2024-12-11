@@ -18,6 +18,7 @@ const App = () => {
         <Clients/>
         <Reviews/>
         <Contact/>
+        <Footer/>
     </div>
     </div>
   )

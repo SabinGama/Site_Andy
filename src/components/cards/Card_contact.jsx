@@ -4,23 +4,43 @@ import Icon from '../Icon';
 
 const Card_contact = ({text_titlu, text_descriere, icon_card}) => {
   return (
-    <Box style={container}>
+    <Box sx={container}>
     <Icon styles={poza} icon={icon_card}/>
-    <Box style={icon_text}>
+    <Box sx={icon_text}>
     <Icon styles={icon} icon={"Mail"}/>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginLeft:'1%'}}>anndy.dron@airitsolutions.com</Typography>
+    <Typography variant="p1" sx={p}>anndy.dron@airitsolutions.com</Typography>
     </Box>
-    <Box style={icon_text}>
+    <Box sx={icon_text}>
     <Icon styles={icon} icon={"Phone"}/>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins',marginLeft:'1%'}}> +40 733 348 053</Typography>
+    <Typography variant="p1" sx={p}> +40 733 348 053</Typography>
     </Box>
     </Box>
   )
 }
 
 const container={
-  padding:'5%',
-  maxWidth:'100%',
+  padding:'2%',
+  marginLeft: {
+    xs: '0%', // 100% width on extra-small screens
+    sm: '15%',  // 80% width on small screens
+    md: '0',  // 60% width on medium screens
+    lg: '0',  // 50% width on large screens
+    xl: '0'   // 40% width on extra-large screens
+},
+marginRight: {
+    xs: '0%', // 100% width on extra-small screens
+    sm: '15%',  // 80% width on small screens
+    md: '0',  // 60% width on medium screens
+    lg: '0',  // 50% width on large screens
+    xl: '0'   // 40% width on extra-large screens
+},
+  maxWidth:{
+    xs:'100%',
+    sm:'70%',
+    md:'100%',
+    lg:'100%',
+    xl:'100%'
+  },
   height:'auto',
   justifyContent:'center',
   alignItems:'center',
@@ -48,4 +68,12 @@ const icon_text ={
   alignItems:'center',
   marginTop:'2%',
 }
+
+const p = {
+  fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginLeft:'1%',
+  fontSize: {
+    xs: '0.8rem !important', // 110% font size on small screens
+    md: '1rem !important', // 120% font size on medium screens
+  },
+};
 export default Card_contact

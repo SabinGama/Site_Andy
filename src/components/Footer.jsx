@@ -43,7 +43,7 @@ const Footer = () => {
           </Box>
         </Box>
 
-        {/* Newsletter Column */}
+        {/* Newsletter Column
         <Box sx={newsletterColumn}>
           <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: '10px' }}>
             Newsletter
@@ -63,7 +63,7 @@ const Footer = () => {
               Subscribe
             </Button>
           </Box>
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

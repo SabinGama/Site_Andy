@@ -3,8 +3,8 @@ import { Typography, Box } from '@mui/material';
 
 const Reviews = () => {
   return (
-    <Box  style={box_services}>
-        <Box style={box_services_title}>
+    <Box  style={box_reviews}>
+        <Box style={box_reviews_title}>
         <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web'}}>REVIEWS</Typography>
         <Typography variant="h2" sx={h2}>See What Others People Are Saying</Typography>
         </Box>
@@ -20,7 +20,7 @@ const Reviews = () => {
   )
 }
 
-const box_services={
+const box_reviews={
     flexWrap: 'wrap', /* Allow wrapping for smaller screens */
     marginTop: '2%',
     justifyContent: 'center', /* Center the content horizontally */
@@ -30,7 +30,7 @@ const box_services={
     boxSizing: 'border-box'
   };
 
-const box_services_title ={
+const box_reviews_title ={
     display: 'flex',
     flexDirection: 'column',
     marginRight: '25%', // Aici mai trebuie incercat alta metoda de a centra textul

@@ -3,8 +3,8 @@ import { Typography, Box } from '@mui/material';
 
 const Clients = () => {
   return (
-        <Box style={box_services}>
-        <Box style={box_services_title}>
+        <Box style={box_clients}>
+        <Box style={box_clients_title}>
         <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web', textTransform:'uppercase'}}>Clients</Typography>
         <Typography variant="h2" sx={h2}>Our portfolio features
         a diverse range of clients</Typography>
@@ -15,7 +15,7 @@ const Clients = () => {
   )
 }
 
-const box_services_title ={
+const box_clients_title ={
     display: 'flex',
     flexDirection: 'column',
     marginRight: '20%', // Aici mai trebuie incercat alta metoda de a centra textul
@@ -27,7 +27,7 @@ const box_services_title ={
     backgroundColor: 'yellow',
   };
   
-  const box_services={
+  const box_clients={
     flexWrap: 'wrap', /* Allow wrapping for smaller screens */
     marginTop: '2%',
     justifyContent: 'center', /* Center the content horizontally */

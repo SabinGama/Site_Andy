@@ -6,12 +6,14 @@ const Card_contact = ({text_titlu, text_descriere, icon_card}) => {
   return (
     <Box style={container}>
     <Icon styles={poza} icon={icon_card}/>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginTop:2, backgroundColor:'purple', fontSize:'16px',   justifyContent:'center',
-  alignItems:'center',
-  alignSelf:'center',}}>
-    <Icon styles={icon} icon={"Hours"}/> anndy.dron@airitsolutions.com</Typography>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginTop:2, backgroundColor:'red', fontSize:'20px'}}>
-    <Icon styles={icon} icon={"Phone"}/> +40 733 348 053</Typography>
+    <Box style={icon_text}>
+    <Icon styles={icon} icon={"Mail"}/>
+    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins',backgroundColor:'purple', marginLeft:'1%'}}>anndy.dron@airitsolutions.com</Typography>
+    </Box>
+    <Box style={icon_text}>
+    <Icon styles={icon} icon={"Phone"}/>
+    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', backgroundColor:'red', marginLeft:'1%'}}> +40 733 348 053</Typography>
+    </Box>
     </Box>
   )
 }
@@ -33,11 +35,17 @@ const icon={
   alignItems:'center',
   alignSelf:'center',
   padding:2,
-  backgroundColor:'orange',
 }
 
 const poza = {
   maxWidth: '100%',
   height: 'auto',
+}
+
+const icon_text ={
+  display:'flex',
+  flexDirection:'row',
+  alignItems:'center',
+  marginTop:'2%',
 }
 export default Card_contact

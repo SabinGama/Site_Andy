@@ -4,7 +4,7 @@ import Icon from '../Icon';
 const Card_square = ({text_titlu, text_descriere, icon_card, link}) => {
   return (
     <Box style={container}>
-      <Box style={box_imagine}>
+      <Box style={box_icon}>
       <Icon styles={icon} icon={icon_card}/>
       </Box>
     <Typography variant="h5" sx={{fontWeight:600, display:'block', color:'white', fontFamily: 'Titillium Web', marginTop:3, marginRight:'10%', marginLeft:'10%'}}>{text_titlu}</Typography>
@@ -25,7 +25,7 @@ const container={
   marginLeft: 'auto',
 }
 
-const box_imagine={
+const box_icon={
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',

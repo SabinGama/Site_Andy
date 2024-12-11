@@ -1,22 +1,64 @@
 import React from 'react'
-import { Typography, Box } from '@mui/material';
-import poza_laptop from '../assets/poza_laptop.png';
+import { Typography, Box, TextField , Button} from '@mui/material';
+import Contact_image from '../assets/Contact_image.png';
 import Card_contact from './cards/Card_contact';
 
 const Contact = () => {
   return (
-    <Box style={box_services}>
-    <Box style={box_services_title}>
+    <Box style={box_contact}>
+    <Box style={box_contact_title}>
         <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web', textTransform:'uppercase'}}>Contact</Typography>
-        <Typography variant="h2" sx={h2}>Contact us today
-        to get started</Typography>
+        <Typography variant="h2" sx={h2}>Contact us today to get started</Typography>
     </Box>
         <Box style={container}>
         <Box style={left_pane}>
             <Card_contact icon_card={"Logo_color"}/>
+          <Box style={box_textinputs}>
+
+          {/* Name */}
+          <TextField
+          sx={textfield}
+          required
+          id="outlined-required"
+          label="Name"
+        />
+
+         {/* Email */}
+        <TextField
+        sx={textfield}
+          required
+          id="outlined-required"
+          label="Email"
+        />
+
+         {/* Phone Number */}
+        <TextField
+        sx={textfield}
+          required
+          id="outlined-required"
+          label="Phone number"
+        />
+
+         {/* Company */}
+        <TextField
+        sx={textfield}
+          id="outlined"
+          label="Company"
+        />
+
+         {/* Message */}
+        <TextField
+        sx={textfield}
+          id="outlined"
+          multiline
+          maxRows={5}
+          label="Write your message"
+        />
+        <Button variant="contained" sx={buttonStyles}>Send</Button>
+        </Box>
         </Box>
         <Box style={right_pane}>
-            <img src={poza_laptop} alt='Poza_Laptop' style={poza}></img>
+            <img src={Contact_image} alt='Poza_Laptop2' style={poza}></img>
         </Box>
         </Box>
     </Box>
@@ -25,13 +67,13 @@ const Contact = () => {
 
 const container = {
     display: 'flex',
-    backgroundColor:'red',
+   // backgroundColor:'red',
     height: '100%', // Full viewport height
     justifyContent: 'center', // Center content horizontally
     marginTop: '2%',
   };
 
-const box_services={
+const box_contact={
     flexWrap: 'wrap', /* Allow wrapping for smaller screens */
     marginTop: '2%',
     justifyContent: 'center', /* Center the content horizontally */
@@ -40,7 +82,7 @@ const box_services={
     margin: '50px',
   };
 
-const box_services_title ={
+const box_contact_title ={
     display: 'flex',
     flexDirection: 'column',
     marginRight: 'auto', // Aici mai trebuie incercat alta metoda de a centra textul
@@ -54,13 +96,12 @@ const box_services_title ={
 
   const left_pane = {
     flex:0.45,
-    backgroundColor:'blue',
+    //backgroundColor:'blue',
   };
   
   const right_pane = {
     flex:0.45,
     display: 'flex',
-    flexDirection: 'column',
     backgroundColor:'green',
     justifyContent: 'center',
     alignItems: 'center',
@@ -71,6 +112,37 @@ const box_services_title ={
     height: 'auto',
 }
 
+const box_textinputs = {
+  marginTop: '5%',
+  display: 'flex',
+  flexDirection: 'column',
+}
+const textfield ={
+'& .MuiInputBase-root': {
+    color: '#8E8E8E', // Text color
+  },
+  '& .MuiInputLabel-root': {
+    color: '#8E8E8E', // Label color
+    '&.Mui-focused': {
+      color: '#08BED2', // Label color when focused
+    },
+  },
+  '& .MuiOutlinedInput-root': {
+    '& fieldset': {
+      borderColor: '#8E8E8E', // Border color
+    },
+    '&:hover fieldset': {
+      borderColor: 'white', // Border color on hover
+    },
+    '&.Mui-focused fieldset': {
+      borderColor: '#08BED2', // Border color when focused
+    },
+  },
+  fontFamily:'Titillium Web',
+  marginBottom: '20px', // Add some space between text fields
+}
+
+
 const h2 = {
   fontWeight:600, display:'flex', color:'white',  fontFamily: 'Titillium Web',
   textTransform:'capitalize',
@@ -80,6 +152,54 @@ const h2 = {
     md: '2.5rem !important', // 120% font size on medium screens
     lg: '3rem !important', // 130% font size on large screens
     xl: '3.75rem !important'  // 140% font size on extra-large screens
+  },
+};
+
+const buttonStyles = {
+  background: 'linear-gradient(-90deg, #1585B7,#07BFD2)',
+  fontWeight: 700,
+  width: {
+      xs: '50%', // 100% width on extra-small screens
+      sm: '80%',  // 80% width on small screens
+      md: '60%',  // 60% width on medium screens
+      lg: '50%',  // 50% width on large screens
+      xl: '40%'   // 40% width on extra-large screens
+  },
+  height: {
+      xs: '45px', // 45px height on extra-small screens
+      sm: '50px', // 50px height on small screens
+      md: '55px', // 55px height on medium screens
+      lg: '60px', // 60px height on large screens
+      xl: '65px'  // 65px height on extra-large screens
+  },
+  fontFamily: 'Titillium Web',
+  fontSize: {
+      xs: '100%', // 100% font size on extra-small screens
+      sm: '110%', // 110% font size on small screens
+      md: '120%', // 120% font size on medium screens
+      lg: '130%', // 130% font size on large screens
+      xl: '140%'  // 140% font size on extra-large screens
+  },
+  marginLeft: {
+      xs: '25%', // 100% width on extra-small screens
+      sm: '0',  // 80% width on small screens
+      md: '0',  // 60% width on medium screens
+      lg: '0',  // 50% width on large screens
+      xl: '0'   // 40% width on extra-large screens
+  },
+  marginRight: {
+      xs: '25%', // 100% width on extra-small screens
+      sm: '0',  // 80% width on small screens
+      md: '0',  // 60% width on medium screens
+      lg: '0',  // 50% width on large screens
+      xl: '0'   // 40% width on extra-large screens
+  },
+  marginTop: {
+      xs: '2vh', // 100% width on extra-small screens
+      sm: '0',  // 80% width on small screens
+      md: '0',  // 60% width on medium screens
+      lg: '0',  // 50% width on large screens
+      xl: '0'   // 40% width on extra-large screens
   },
 };
 export default Contact

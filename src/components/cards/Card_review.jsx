@@ -1,9 +1,12 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import { Typography, Box, Rating } from '@mui/material';
+import { lightGreen } from '@mui/material/colors';
 
 const Card_review = ({text_nume, text_descriere, text_functie}) => {
   return (
-    <Box style={container}>
+    <Box sx={container}>
     <Typography variant="p1" sx={p}>{text_descriere}</Typography>
     <Typography variant="h5" sx={{fontWeight:600, display:'block', color:'white', fontFamily: 'Titillium Web', marginTop:2}}>{text_nume}</Typography>
     <Typography sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', size:12}}>{text_functie}</Typography>
@@ -14,7 +17,13 @@ const Card_review = ({text_nume, text_descriere, text_functie}) => {
 
 const container={
     padding:'1.5%',
-    maxWidth:'40%',
+    maxWidth:{
+      xs:'100%',
+      sm: '100%',
+      md: '40%',
+      lg:'40%',
+      xl:'40%'
+    },
     justifyContent:'center',
     alignItems:'center',
     background: 'rgba(170, 170, 170, 0.06)',

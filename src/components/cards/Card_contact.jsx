@@ -8,11 +8,11 @@ const Card_contact = ({text_titlu, text_descriere, icon_card}) => {
     <Icon styles={poza} icon={icon_card}/>
     <Box style={icon_text}>
     <Icon styles={icon} icon={"Mail"}/>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins',backgroundColor:'purple', marginLeft:'1%'}}>anndy.dron@airitsolutions.com</Typography>
+    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', marginLeft:'1%'}}>anndy.dron@airitsolutions.com</Typography>
     </Box>
     <Box style={icon_text}>
     <Icon styles={icon} icon={"Phone"}/>
-    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins', backgroundColor:'red', marginLeft:'1%'}}> +40 733 348 053</Typography>
+    <Typography variant="p1" sx={{fontWeight:400, display:'block', color:'white', fontFamily: 'Poppins',marginLeft:'1%'}}> +40 733 348 053</Typography>
     </Box>
     </Box>
   )

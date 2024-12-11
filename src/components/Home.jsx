@@ -53,14 +53,14 @@ const buttonStyles = {
     },
     marginLeft: {
         xs: '25%', // 100% width on extra-small screens
-        sm: '0',  // 80% width on small screens
+        sm: '10%',  // 80% width on small screens
         md: '0',  // 60% width on medium screens
         lg: '0',  // 50% width on large screens
         xl: '0'   // 40% width on extra-large screens
     },
     marginRight: {
         xs: '25%', // 100% width on extra-small screens
-        sm: '0',  // 80% width on small screens
+        sm: '10%',  // 80% width on small screens
         md: '0',  // 60% width on medium screens
         lg: '0',  // 50% width on large screens
         xl: '0'   // 40% width on extra-large screens

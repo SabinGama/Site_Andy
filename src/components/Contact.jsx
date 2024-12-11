@@ -10,7 +10,7 @@ const Contact = () => {
         <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web', textTransform:'uppercase'}}>Contact</Typography>
         <Typography variant="h2" sx={h2}>Contact us today to get started</Typography>
     </Box>
-        <Box style={container}>
+        <Box sx={container}>
         <Box style={left_pane}>
             <Card_contact icon_card={"Logo_color"}/>
           <Box style={box_textinputs}>
@@ -57,7 +57,7 @@ const Contact = () => {
         <Button variant="contained" sx={buttonStyles}>Send</Button>
         </Box>
         </Box>
-        <Box style={right_pane}>
+        <Box sx={right_pane}>
             <img src={Contact_image} alt='Poza_Laptop2' style={poza}></img>
         </Box>
         </Box>
@@ -66,8 +66,14 @@ const Contact = () => {
 }
 
 const container = {
-    display: 'flex',
-   // backgroundColor:'red',
+  display: 'flex',
+  flexDirection:{
+    xs: 'column',
+    sm:  'column',  
+    md:  'row',
+    lg: 'row',
+    xl: 'row',
+  },
     height: '100%', // Full viewport height
     justifyContent: 'center', // Center content horizontally
     marginTop: '2%',
@@ -102,7 +108,11 @@ const box_contact_title ={
   const right_pane = {
     flex:0.45,
     display: 'flex',
-    backgroundColor:'green',
+    // backgroundColor:'green',
+    marginTop:{
+      xs:'5vh',
+      sm:'5vh'
+    },
     justifyContent: 'center',
     alignItems: 'center',
   };
@@ -182,14 +192,14 @@ const buttonStyles = {
   },
   marginLeft: {
       xs: '25%', // 100% width on extra-small screens
-      sm: '0',  // 80% width on small screens
+      sm: '10%',  // 80% width on small screens
       md: '0',  // 60% width on medium screens
       lg: '0',  // 50% width on large screens
       xl: '0'   // 40% width on extra-large screens
   },
   marginRight: {
       xs: '25%', // 100% width on extra-small screens
-      sm: '0',  // 80% width on small screens
+      sm: '10%',  // 80% width on small screens
       md: '0',  // 60% width on medium screens
       lg: '0',  // 50% width on large screens
       xl: '0'   // 40% width on extra-large screens

@@ -1,5 +1,6 @@
 import Card_review from './cards/Card_review';
 import { Typography, Box } from '@mui/material';
+import './Reviews.css'
 
 const Reviews = () => {
   return (
@@ -8,11 +9,11 @@ const Reviews = () => {
         <Typography variant="h6" sx={{fontWeight:600, display:'block', color:'#08BCD1',textAlign:'center', fontFamily: 'Titillium Web'}}>REVIEWS</Typography>
         <Typography variant="h2" sx={h2}>See What Others People Are Saying</Typography>
         </Box>
-        <Box style={box_carduri}>
-            <Card_review text_nume="Miss Sammy Feeney" text_descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." text_functie={'Investor Metrics Executive'}/>
-            <Card_review text_nume="Rosemary Mante" text_descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." text_functie={'Human Integration Agent'}/>
+        <Box style={box_carduri} className='box_carduri_reviews'>
+            <Card_review className='card_reviews' text_nume="Miss Sammy Feeney" text_descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." text_functie={'Investor Metrics Executive'}/>
+            <Card_review className='card_reviews' text_nume="Rosemary Mante" text_descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." text_functie={'Human Integration Agent'}/>
         </Box>
-        <Box style={box_carduri}>
+        <Box style={box_carduri} className='box_carduri_reviews'>
         <Card_review text_nume="Regina Weissnat" text_descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt utSed do eiusmod tempor incididunt ut Sed do eiusmod tempor incididunt ut Sed do eiusmod tempor incididunt ut  labore et dolore magna aliqua." text_functie={'Regional Branding Consultant'}/>
         <Card_review text_nume="Marianne Bode" text_descriere="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " text_functie={'Product Intranet Agent'}/>
         </Box>
@@ -42,8 +43,8 @@ const box_reviews_title ={
   };
   
   const box_carduri={
-    display: 'flex',
     justifyContent: 'space-between',
+    display: 'flex',
   };
 
   const h2 = {

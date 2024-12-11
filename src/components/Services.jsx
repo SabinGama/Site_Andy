@@ -38,6 +38,7 @@ export default Services;
 const box_services={
   marginTop: '2%',
   justifyContent: 'center', /* Center the content horizontally */
+  
 };
 
 
@@ -56,6 +57,13 @@ const box_services_title ={
 const box_carduri={
     display: 'flex',
     justifyContent: 'space-between',
+    flexDirection:{
+      xs:'column',
+      sm:'row',
+      md:'row',
+      lg:'row',
+      xl:'row'
+    },
 };
 
 const h2_mobile={

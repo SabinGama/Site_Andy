@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { Typography, Box, Rating } from '@mui/material';
-import { lightGreen } from '@mui/material/colors';
 
 const Card_review = ({text_nume, text_descriere, text_functie}) => {
   return (

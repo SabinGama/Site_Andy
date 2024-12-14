@@ -1,0 +1,111 @@
+/* Header styling */
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    z-index: 100;
+    position: relative;
+  }
+  
+  /* Logo styling */
+  .logo {
+    height: 50px; /* Adjust logo size */
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    gap: 20px; /* Add spacing between links */
+    background-color: rgba(206, 249, 254, 0.13); /* Light transparent background */
+    padding: 15px;
+    border-radius: 50px;
+  }
+  
+  .navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    z-index: 1; /* Ensure text is above hover background */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #00d4ff; /* Hover text color */
+  }
+  
+  .navbar a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 140%;
+    border-radius: 40px;
+    background: transparent;
+    transition: background 0.3s ease;
+    z-index: -1; /* Place pseudo-element behind the text */
+  }
+  
+  .navbar a:hover::before {
+    background-image: linear-gradient(135deg, #1197c0, #00a7d6); /* Gradient hover effect */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 1230px) {
+    .navbar {
+      display: none; /* Initially hide the navbar on small screens */
+      flex-direction: column;
+      gap: 10px;
+      background-color: rgba(206, 249, 254, 0.13); /* Light transparent background */
+      padding: 20px;
+      border-radius: 10px;
+    }
+  
+    .header.active{
+        margin-bottom: 30vh;
+    }
+
+    .navbar.active {
+      display: flex; /* Show navbar when active */
+      flex-direction: column;
+      position: absolute;
+      top:10vh;
+      left: 3%;
+      width: 94%;
+      justify-content: space-around;
+    }
+    .navbar a{
+        white-space: nowrap;
+        width: 5vw;
+        font-size: 20px;
+    }
+    .burger-menu {
+      display: block;
+      font-size: 24px;
+      color: white;
+      height: 6vh;
+      width: 22vw;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .logo {
+        height: 6vh; /* Adjust logo size */
+        width: 32vw;
+      }
+  }
+  
+  @media (min-width: 1230px) {
+  .burger-menu {
+    display: none; /* Hidden on large screens */
+  }
+}

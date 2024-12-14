@@ -1,5 +1,7 @@
 import React from 'react';
 import { Box, Typography, Link, TextField, Button } from '@mui/material';
+import logocolor from "../assets/logo_color.png";
+import tagline from "../assets/tagline.png";
 
 const Footer = () => {
   return (
@@ -8,14 +10,10 @@ const Footer = () => {
         {/* Column 1 */}
         <Box sx={footerColumn}>
           <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: '10px' }}>
-            Section
+         <img className="logo" src={logocolor} alt="Logo" />
           </Typography>
           <Box sx={footerNav}>
-            <Link href="#" sx={footerLink}>Home</Link>
-            <Link href="#" sx={footerLink}>Features</Link>
-            <Link href="#" sx={footerLink}>Pricing</Link>
-            <Link href="#" sx={footerLink}>FAQs</Link>
-            <Link href="#" sx={footerLink}>About</Link>
+          <img className="tagline" src={tagline} alt="Tag Line" />
           </Box>
         </Box>
 

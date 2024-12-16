@@ -2,10 +2,10 @@ import React from 'react'
 import { Typography, Box } from '@mui/material';
 import Icon from '../Icon';
 
-const Card_about = ({text_titlu, text_descriere, icon_card}) => {
+const Card_about = ({text_titlu, text_descriere, icon_card, className}) => {
   return (
     <Box sx={container}>
-    <Icon styles={icon} icon={icon_card}/>
+    <Icon styles={icon} icon={icon_card} className={className}/>
     <Typography variant="h5" sx={h5}>{text_titlu}</Typography>
     <Typography variant="p1" sx={p}>{text_descriere}</Typography>
     </Box>

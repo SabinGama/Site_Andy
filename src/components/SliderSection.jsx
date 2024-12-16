@@ -3,27 +3,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import "../index.css";
-import { Typography, Box, TextField , Button} from '@mui/material';
+import {Box} from '@mui/material';
 import Card_slider from "./cards/Card_slider";
 
 const data=[
   {
     image:'Iristel',
-    title:'Iphone 5G Phone',
+    text_titlu:'Iristel.com',
+    text_descriere:'Business Communications Solutions Provider',
   },
   {
-    image:'Phone',
-    title:'Iphone 5G Phone',
+    image:'P_plus_M',
+    text_titlu:'P+M Business Solutions GmbH',
+    text_descriere:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
     image:'Client',
-    title:'Iphone 5G Phone',
+    text_titlu:'Client 3',
+    text_descriere:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
   {
-    image:'Home',
-    title:'Iphone 5G Phone',
+    image:'Logo',
+    text_titlu:'Client 4',
+    text_descriere:'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   },
-
 ]
 
 function SliderSection() {
@@ -45,10 +48,7 @@ function SliderSection() {
           data.map((item,index)=>{
             return(
               <div key={index} className='bg-white'>
-
-            <Box style={slider_Card}>
-            <Card_slider icon_card={item.image}/>
-            </Box>
+            <Card_slider icon_card={item.image} text_titlu={item.text_titlu} text_descriere={item.text_descriere} className={'icon_slider'}/>
                 </div>
             )
           })
@@ -60,7 +60,3 @@ function SliderSection() {
 }
 
 export default SliderSection;
-
-const slider_Card= {
-    margin: '0px 16px',
-  };

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Link, TextField, Button } from '@mui/material';
+import { Box, Typography, Link, TextField, Button, InputAdornment  } from '@mui/material';
 import logocolor from "../assets/logo_color.png";
 import tagline from "../assets/tagline.png";
 
@@ -9,53 +9,49 @@ const Footer = () => {
       <Box sx={footerContent}>
         {/* Column 1 */}
         <Box sx={footerColumn}>
-          <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: '10px' }}>
-         <img className="logo" src={logocolor} alt="Logo" />
-          </Typography>
-          <Box sx={footerNav}>
+         <img className="logo_footer" src={logocolor} alt="Logo" />
           <img className="tagline" src={tagline} alt="Tag Line" />
-          </Box>
         </Box>
 
         {/* Column 2 */}
         <Box sx={footerColumn}>
-          <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: '10px' }}>
+          <Typography variant="h6" sx={h6}>
            Quick Links
           </Typography>
-          <Box sx={footerNav}>
-            <Link href="#" sx={footerLink}>Services</Link>
-            <Link href="#" sx={footerLink}>About Us</Link>
-            <Link href="#" sx={footerLink}>Client</Link>
-            <Link href="#" sx={footerLink}>Reviews</Link>
-          </Box>
+            <Link href="" sx={footerLink}>Services</Link>
+            <Link href="" sx={footerLink}>About Us</Link>
+            <Link href="" sx={footerLink}>Client</Link>
+            <Link href="" sx={footerLink}>Reviews</Link>
         </Box>
 
         {/* Column 3 */}
         <Box sx={footerColumn}>
-          <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: '10px' }}>
+          <Typography variant="h6" sx={h6}>
             Contact Us
           </Typography>
-          <Box sx={footerNav}>
             <Link href="#" sx={footerLink}>anndy.dron@airitsolutions.com</Link>
             <Link href="#" sx={footerLink}>+40 733 348 053</Link>
-          </Box>
         </Box>
 
         
         <Box sx={footerColumn}>
-          Newsletter Column
-          <Box sx={newsletterForm}>
-            <TextField
-              id="newsletter1"
-              type="email"
-              label="Email address"
-              variant="outlined"
-              sx={newsletterInput}
-            />
-            <Button variant="contained" color="primary" sx={newsletterButton}>
-              Subscribe
-            </Button>
-          </Box>
+          <Typography variant="h6" sx={h6}>Newsletter</Typography>
+          <TextField
+            id="newsletter-email"
+            type="email"
+            label="Email address"
+            variant="outlined"
+            sx={newsletterInput}
+            InputProps={{
+              endAdornment: (
+                <InputAdornment position="end">
+                  <Button variant="contained" color="primary" sx={newsletterButton}>
+                    Subscribe
+                  </Button>
+                </InputAdornment>
+              ),
+            }}
+          />
         </Box>
       </Box>
     </Box>
@@ -64,78 +60,82 @@ const Footer = () => {
 
 const footerContainer = {
   color: 'white',
-  padding: '40px 20px',
-  marginTop: 'auto',
+  padding: '2%',
+  marginTop: '2%',
+  background: '#333',
 };
 
 const footerContent = {
   display: 'flex',
-  flexDirection: 'row',
-  justifyContent: 'space-between',
-  alignItems: 'flex-start',
-  maxWidth: '1200px',
-  margin: '0 auto',
+  flexDirection: {
+    xs: 'column',
+    sm: 'column',
+    md: 'row',
+    lg: 'row',
+    xl: 'row',
+  },
+  justifyContent: 'space-around',
+  backgroundColor: 'red',
   flexWrap: 'wrap', // Allow wrapping for smaller screens
 };
 
 const footerColumn = {
-  width: '100%',
-  maxWidth: '200px',
-  textAlign: 'left',
-  marginBottom: '20px', // Add margin for spacing between columns
-};
-
-const footerNav = {
+  textAlign: {
+    xs: 'center',
+    sm: 'center',
+    md: 'left',
+    lg: 'left',
+    xl: 'left',
+  },
+  maxWidth: {
+    xs: '100%',
+    sm: '100%',
+    md: '20%',
+    lg: '20%',
+    xl: '20%',
+  },
   display: 'flex',
   flexDirection: 'column',
-  gap: '10px',
+  backgroundColor: 'blue',
+  marginBottom: '5%',
 };
 
 const footerLink = {
+  color: 'white',
+  fontWeight:400, display:'block', fontFamily: "Poppins",
+  fontSize: {
+    xs: '0.8rem !important', // 110% font size on small screens
+    md: '1rem !important', // 120% font size on medium screens
+  },
   textDecoration: 'none',
   '&:hover': {
     textDecoration: 'underline',
   },
-  color:'white'
-};
-
-const newsletterColumn = {
-  width: '20vw',
-  maxWidth: '500px',
-  marginBottom: '20px', // Add margin for spacing
-  
-};
-
-const newsletterForm = {
-  background:'white',
-  display: 'flex',
-  flexDirection: 'row',
-  gap: '10px',
-  width: '25vw',
-  height: '80px',
-  position:'relative',
-  borderRadius:'24px',
-  border: 'none!important',
-  marginTop: '2vh',
 };
 
 const newsletterInput = {
-  width: '432px',
-  height: '80px',
-  borderRadius:'24px',
-  marginTop: '2vh',
-  borderColor: 'transpartent!important'
+  width: '100%',
 };
 
 const newsletterButton = {
-  borderRadius:'24px',
-  width: '8vw',
-  height: '8vh',
-  background:'#1198C0',
-  position: 'absolute',
-  right:'0',
-  top:'1.3vh',
-  margin: '0 0.5vw'
-};
+  height: '100%',
+  borderRadius: 24,
+  fontWeight: 700,
+  fontFamily: 'Titillium Web',
+  fontSize: '80%'};
 
+const h6 = {
+    fontWeight:600, 
+    display:'block', 
+    textAlign:'center', 
+    fontFamily: 'Titillium Web',
+    marginBottom: '2vh',
+    fontSize: {
+      xs: '1rem !important', // 100% font size on extra-small screens
+      sm: '1.2rem !important', // 110% font size on small screens
+      md: '1.5rem !important', // 120% font size on medium screens
+      lg: '1.5rem !important', // 130% font size on large screens
+      xl: '1.5rem !important'  // 140% font size on extra-large screens
+    },
+  };
 export default Footer;

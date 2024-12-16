@@ -1,11 +1,11 @@
 import { Typography, Box, backdropClasses } from '@mui/material';
 import Icon from '../Icon';
 
-const Card_square = ({text_titlu, text_descriere, icon_card, link}) => {
+const Card_services = ({text_titlu, text_descriere, icon_card, link, className}) => {
   return (
     <Box sx={container}>
       <Box sx={box_icon}>
-      <Icon styles={icon} icon={icon_card}/>
+      <Icon styles={icon} icon={icon_card} className={className}/>
       </Box>
     <Typography variant="h5" sx={h5}>{text_titlu}</Typography>
     <Typography variant="p1" sx={p}>{text_descriere} <a href="" style={{textDecoration:'underline'}}>{link}</a></Typography>
@@ -42,7 +42,7 @@ const box_icon={
   alignItems: 'center',
   justifyContent: 'center',
   marginTop: {
-    xs: '-8vh', // 100% width on extra-small screens
+    xs: '-7.5vh', // 100% width on extra-small screens
     sm: '-6vh',  // 80% width on small screens
     md: '-6vh',  // 60% width on medium screens
     lg: '-8vh',  // 50% width on large screens
@@ -82,4 +82,4 @@ const p = {
     md: '1rem !important', // 120% font size on medium screens
   },
 };
-export default Card_square;
+export default Card_services;

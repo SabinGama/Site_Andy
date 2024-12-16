@@ -12,7 +12,7 @@ const Contact = () => {
     </Box>
         <Box sx={container}>
         <Box style={left_pane}>
-            <Card_contact icon_card={"Logo_color"}/>
+            <Card_contact icon_card={"Logo_color"} className={'icon_contact'}/>
           <Box style={box_textinputs}>
 
           {/* Name */}
@@ -85,7 +85,7 @@ const box_contact={
     justifyContent: 'center', /* Center the content horizontally */
     alignItems: 'center', /* Center the content vertically */
     height: '100%', 
-    margin: '50px',
+    margin: '20px',
   };
 
 const box_contact_title ={
@@ -134,7 +134,7 @@ const h6 = {
   textAlign:'center',
   textTransform:'uppercase',
   fontSize: {
-    xs: '1rem !important', // 100% font size on extra-small screens
+    xs: '0.8rem !important', // 100% font size on extra-small screens
     sm: '1.2rem !important', // 110% font size on small screens
     md: '1.5rem !important', // 120% font size on medium screens
     lg: '1.5rem !important', // 130% font size on large screens
@@ -146,7 +146,7 @@ const h2 = {
   fontWeight:600, display:'flex', color:'white',  fontFamily: 'Titillium Web',
   textTransform:'capitalize',
   fontSize: {
-    xs: '1.4rem !important', // 100% font size on extra-small screens
+    xs: '1.2rem !important', // 100% font size on extra-small screens
     sm: '2rem !important', // 110% font size on small screens
     md: '2.5rem !important', // 120% font size on medium screens
     lg: '3rem !important', // 130% font size on large screens

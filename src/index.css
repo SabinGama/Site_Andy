@@ -6,7 +6,6 @@
 body,
 html {
   height: 100%;
-  background-color: "#181414";
 }
 .bg {
   height: 100%;
@@ -42,30 +41,92 @@ a {
   display: none!important;
 }
 
+.slick-dots li button:before{
+  color:rgb(177,177,177)!important;
+}
 .slick-dots li.slick-active button:before {
   opacity: .75;
-  color: #fff!important;
+  color: #3ED5DD!important;
 }
 
-.slick-dots li button:before {
-  font-family: 'slick';
-  font-size: 6px;
-  line-height: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  content: '•';
-  text-align: center;
-  opacity: .25;
-  color: #ffffff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.icon_slider{
+  max-width: 40%;
+  margin-right:5%;
+  margin-left:5%;
 }
+.icon_contact{
+  width: 50%;
+  margin-top: 5%;
+}
+.tagline{
+  max-width: 60%;
+  margin-top: 5%;
+}
+
+@media (max-width: 1024px){
+.icon_slider{
+  max-width: 25%;
+  margin-bottom:2%
+}
+.icon_contact{
+  width: 50%;
+  margin-top: 5%;
+}
+}
+
+@media (max-width: 899px) {
+  .poza_laptop {
+    max-width: 40% !important;
+  }
+  .tagline{
+    width: 25%;
+    margin-top: 5%;
+    align-self: center;
+  }
+  .logo_footer{
+    width: 25%;
+    align-self: center;
+  }
+}
+
 @media (max-width: 768px) {
 .poza_laptop {
   height: 45vh !important;
   margin-top: 2vh!important;
+  max-width: 84% !important;
+}
+.icon_about{
+  width: 15% !important;
+  margin-top: 2%;
+}
+.icon_slider{
+  max-width: 30%;
+  margin-bottom: 5%;
+}
+.icon_contact{
+  width: 55%;
+  margin-top: 5%;
+}
+}
+@media (max-width: 480px) {
+.icon_services{
+  height: 20% !important;
+  width: 20% !important;
+  margin-top: 5%;
+}
+.icon_about{
+  width: 15% !important;
+  margin-top: 2%;
+}
+.icon_slider{
+  max-width: 40%;
+  margin-bottom: 10%;
+}
+.icon_contact{
+  width: 50%;
+  margin-top: 5%;
+}
+.mail,.phone{
+  width: 7%;
 }
 }

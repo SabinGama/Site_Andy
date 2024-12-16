@@ -1,5 +1,6 @@
 import React from 'react'
 import { Typography, Box } from '@mui/material';
+import SliderSection from './SliderSection';
 
 const Clients = () => {
   return (
@@ -11,6 +12,7 @@ const Clients = () => {
         <Typography variant="p" sx={p}>Our diverse portfolio spans clients worldwide, from startups to large enterprises. 
         Partner with us to take your business to the next level.</Typography>
         </Box>
+        <SliderSection/>
     </Box>
   )
 }

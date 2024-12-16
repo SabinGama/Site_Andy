@@ -16,12 +16,12 @@ const About = () => {
           <Typography variant="p" sx={p}>We’ve taken on the mission to empower businesses by building secure, visually striking digital solutions that protect your brand and drive lasting growth in today’s competitive landscape.</Typography>
         </Box>
         <Box sx={box_carduri}>
-          <Card_about icon_card={"Remote"} text_titlu="Remote services around the globe" text_descriere="We provide seamless support no matter where you are."/>
-          <Card_about icon_card={"Solution"} text_titlu="Customized IT Solutions" text_descriere="We deliver tailored IT solutions that meet your unique needs."/>
+          <Card_about icon_card={"Remote"} className="icon_about" text_titlu="Remote services around the globe" text_descriere="We provide seamless support no matter where you are."/>
+          <Card_about icon_card={"Solution"} className="icon_about" text_titlu="Customized IT Solutions" text_descriere="We deliver tailored IT solutions that meet your unique needs."/>
         </Box>
         <Box sx={box_carduri}>
-          <Card_about icon_card={"Hours"} text_titlu="24/7 Incident Response" text_descriere="You can trust us to keep your systems running smoothly around the clock."/>
-          <Card_about icon_card={"Client"} text_titlu="Client-Centric Approach" text_descriere=" You’re at the heart of everything we do, prioritizing your success every step of the way."/>
+          <Card_about icon_card={"Hours"} className="icon_about" text_titlu="24/7 Incident Response" text_descriere="You can trust us to keep your systems running smoothly around the clock."/>
+          <Card_about icon_card={"Client"} className="icon_about" text_titlu="Client-Centric Approach" text_descriere=" You’re at the heart of everything we do, prioritizing your success every step of the way."/>
         </Box>
       </Box>
     </Box>

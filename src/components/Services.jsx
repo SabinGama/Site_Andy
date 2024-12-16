@@ -1,4 +1,4 @@
-import Card_square from '../components/cards/Card_square';
+import Card_services from '../components/cards/Card_services';
 import { Typography, Box } from '@mui/material';
 
 const Services = () => {
@@ -17,14 +17,14 @@ const Services = () => {
         </Typography>
       </Box>
       <Box sx={box_carduri}>
-        <Card_square icon_card="Security" text_titlu="Cyber security Assessment" text_descriere="Comprehensive assessments to identify and mitigate your cybersecurity risks." />
-        <Card_square icon_card="Consultancy" text_titlu="Comprehensive IT Consultancy" text_descriere="Expert guidance to optimize your IT strategy and drive business growth." />
-        <Card_square icon_card="Hosting" text_titlu="Reliable Server and Website Hosting" text_descriere="Secure and reliable hosting solutions to keep your website running smoothly." />
+        <Card_services icon_card="Security" className={'icon_services'} text_titlu="Cyber security Assessment" text_descriere="Comprehensive assessments to identify and mitigate your cybersecurity risks." />
+        <Card_services icon_card="Consultancy" className={'icon_services'} text_titlu="Comprehensive IT Consultancy" text_descriere="Expert guidance to optimize your IT strategy and drive business growth." />
+        <Card_services icon_card="Hosting" className={'icon_services'} text_titlu="Reliable Server and Website Hosting" text_descriere="Secure and reliable hosting solutions to keep your website running smoothly." />
       </Box>
       <Box sx={box_carduri}>
-        <Card_square icon_card="Training" text_titlu="User Training Programs" text_descriere="Empowering your team with the skills to navigate digital tools securely and efficiently." />
-        <Card_square icon_card="Video" text_titlu="Video Assets Production" text_descriere="Engaging that brings your brand to life. " link="See our portfolio here." />
-        <Card_square icon_card="Development" text_titlu="Creative Web Design and Development" text_descriere="Custom web design and development to make your brand stand out online." />
+        <Card_services icon_card="Training" className={'icon_services'} text_titlu="User Training Programs" text_descriere="Empowering your team with the skills to navigate digital tools securely and efficiently." />
+        <Card_services icon_card="Video" className={'icon_services'} text_titlu="Video Assets Production" text_descriere="Engaging that brings your brand to life. " link="See our portfolio here." />
+        <Card_services icon_card="Development" className={'icon_services'} text_titlu="Creative Web Design and Development" text_descriere="Custom web design and development to make your brand stand out online." />
       </Box>
     </Box>
   );

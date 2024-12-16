@@ -2,16 +2,16 @@ import React from 'react'
 import { Typography, Box } from '@mui/material';
 import Icon from '../Icon';
 
-const Card_contact = ({text_titlu, text_descriere, icon_card}) => {
+const Card_contact = ({icon_card, className}) => {
   return (
     <Box sx={container}>
-    <Icon styles={poza} icon={icon_card}/>
+    <Icon styles={poza} icon={icon_card} className={className}/>
     <Box sx={icon_text}>
-    <Icon styles={icon} icon={"Mail"}/>
+    <Icon styles={icon} icon={"Mail"} className={"mail"}/>
     <Typography variant="p1" sx={p}>anndy.dron@airitsolutions.com</Typography>
     </Box>
     <Box sx={icon_text}>
-    <Icon styles={icon} icon={"Phone"}/>
+    <Icon styles={icon} icon={"Phone"} className={"phone"}/>
     <Typography variant="p1" sx={p}> +40 733 348 053</Typography>
     </Box>
     </Box>

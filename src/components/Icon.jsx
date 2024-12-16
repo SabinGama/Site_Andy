@@ -12,6 +12,7 @@ import Solution from '../assets/Solution.png'
 import Logo_color from '../assets/logo_color.png'
 import Mail from '../assets/mail.svg'
 import Phone from '../assets/phone.svg'
+import Iristel from '../assets/iristel.png'
 
 export default ({icon, styles})=>{
     switch (icon) {
@@ -41,6 +42,8 @@ export default ({icon, styles})=>{
             return <img style={styles} src={Mail} alt='Mail_icon'></img>
         case 'Phone':
             return <img style={styles} src={Phone} alt='Phone_icon'></img>
+            case 'Iristel':
+            return <img style={styles} src={Iristel} alt='Iristel_icon'></img>
         default:
             return <img style={styles} src={Logo} alt='Secure_icon'></img>
     }

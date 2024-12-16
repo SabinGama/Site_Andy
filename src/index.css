@@ -32,3 +32,40 @@ p {
 a {
   text-decoration: none;
 }
+
+.slick-next{
+  display: none!important;
+}
+
+
+ .slick-prev{
+  display: none!important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75;
+  color: #fff!important;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 768px) {
+.poza_laptop {
+  height: 45vh !important;
+  margin-top: 2vh!important;
+}
+}

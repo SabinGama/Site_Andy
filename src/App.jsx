@@ -8,6 +8,7 @@ import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar2 from './components/Navbar2';
+import SliderSection from './components/SliderSection';
 const App = () => {
   return (
     <div style={{backgroundColor:'#181414'}}>
@@ -18,6 +19,7 @@ const App = () => {
         <Services/>
         <About/>
         <Clients/>
+        <SliderSection/>
         <Reviews/>
         <Contact/>
         <Footer/>

@@ -41,14 +41,9 @@ const Footer = () => {
           </Box>
         </Box>
 
-        {/* Newsletter Column
-        <Box sx={newsletterColumn}>
-          <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: '10px' }}>
-            Newsletter
-          </Typography>
-          <Typography variant="body1" sx={{ marginBottom: '20px', visibility:'hidden' }}>
-            Monthly digest of what's new and exciting from us.
-          </Typography>
+        
+        <Box sx={footerColumn}>
+          Newsletter Column
           <Box sx={newsletterForm}>
             <TextField
               id="newsletter1"
@@ -61,7 +56,7 @@ const Footer = () => {
               Subscribe
             </Button>
           </Box>
-        </Box> */}
+        </Box>
       </Box>
     </Box>
   );
@@ -105,7 +100,7 @@ const footerLink = {
 };
 
 const newsletterColumn = {
-  width: '100%',
+  width: '20vw',
   maxWidth: '500px',
   marginBottom: '20px', // Add margin for spacing
   
@@ -116,28 +111,31 @@ const newsletterForm = {
   display: 'flex',
   flexDirection: 'row',
   gap: '10px',
-  width: '432px',
+  width: '25vw',
   height: '80px',
   position:'relative',
   borderRadius:'24px',
-  border: 'none!important'
+  border: 'none!important',
+  marginTop: '2vh',
 };
 
 const newsletterInput = {
   width: '432px',
   height: '80px',
   borderRadius:'24px',
-  marginTop: '2vh'
+  marginTop: '2vh',
+  borderColor: 'transpartent!important'
 };
 
 const newsletterButton = {
   borderRadius:'24px',
-  width: '150px',
-  height: '64px',
+  width: '8vw',
+  height: '8vh',
   background:'#1198C0',
   position: 'absolute',
   right:'0',
-  top:'1.3vh'
+  top:'1.3vh',
+  margin: '0 0.5vw'
 };
 
 export default Footer;

@@ -10,7 +10,7 @@ const Footer = () => {
         {/* Column 1 */}
         <Box sx={footerColumn}>
          <img className="logo_footer" src={logocolor} alt="Logo" />
-          <img className="tagline" src={tagline} alt="Tag Line" />
+         <Typography  variant='h1' sx={{fontWeight:200, display:'block',height:{xs: '10vh', sm:'13.5vh', md:'15vh'}, fontFamily: 'Titillium Web', textAlign:'left', margin:'10px auto', letterSpacing:'6px', textTransform:'uppercase', fontSize:'20px!important'}}>When <br/> restart <br/> doesn’t<br/> work</Typography>
         </Box>
 
         {/* Column 2 */}
@@ -26,7 +26,7 @@ const Footer = () => {
 
         {/* Column 3 */}
         <Box sx={footerColumn}>
-          <Typography variant="h6" sx={h6}>
+          <Typography variant="h6" sx={h6} className='h6_footer'>
             Contact Us
           </Typography>
             <Link href="#" sx={footerLink}>anndy.dron@airitsolutions.com</Link>
@@ -62,7 +62,7 @@ const footerContainer = {
   color: 'white',
   padding: '2%',
   marginTop: '2%',
-  background: '#333',
+  background: '#transparent',
 };
 
 const footerContent = {
@@ -70,12 +70,11 @@ const footerContent = {
   flexDirection: {
     xs: 'column',
     sm: 'column',
-    md: 'row',
+    md: 'column',
     lg: 'row',
     xl: 'row',
   },
   justifyContent: 'space-around',
-  backgroundColor: 'red',
   flexWrap: 'wrap', // Allow wrapping for smaller screens
 };
 
@@ -83,20 +82,27 @@ const footerColumn = {
   textAlign: {
     xs: 'center',
     sm: 'center',
-    md: 'left',
+    md: 'center',
     lg: 'left',
     xl: 'left',
   },
   maxWidth: {
     xs: '100%',
     sm: '100%',
-    md: '20%',
+    md: '100%',
     lg: '20%',
     xl: '20%',
   },
+  margin:{
+    xs: '0',
+    sm:'0',
+    md:'15px auto',
+    lg:'0',
+    xl:'0'
+  },
+  height: 'auto!important',
   display: 'flex',
   flexDirection: 'column',
-  backgroundColor: 'blue',
   marginBottom: '5%',
 };
 
@@ -115,6 +121,12 @@ const footerLink = {
 
 const newsletterInput = {
   width: '100%',
+  backgroundColor:'#fff',
+  borderRadius:'24px',
+      '& .MuiOutlinedInput-root': {
+        '&.Mui-focused fieldset': {
+          borderRadius: '24px', // Border color when focused
+        },}
 };
 
 const newsletterButton = {
